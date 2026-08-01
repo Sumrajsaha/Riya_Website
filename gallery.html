@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Work | Rihaar by Riya</title>
+    <meta name="description" content="View the gallery of our handcrafted bouquets, keychains, and canvas paintings.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .gallery-header {
+            padding: 150px 5% 50px;
+            text-align: center;
+            background: var(--bg-color);
+        }
+        .gallery-header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+        .gallery-header p {
+            font-size: 1.2rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            padding: 20px 5% 100px;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+        .portfolio-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            aspect-ratio: 4/5;
+            cursor: pointer;
+        }
+        .portfolio-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .portfolio-overlay {
+            position: absolute;
+            bottom: -100%;
+            left: 0;
+            width: 100%;
+            padding: 20px;
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+            color: white;
+            transition: bottom 0.4s ease;
+        }
+        .portfolio-item:hover img {
+            transform: scale(1.05);
+        }
+        .portfolio-item:hover .portfolio-overlay {
+            bottom: 0;
+        }
+        .portfolio-overlay h3 {
+            font-family: var(--font-main);
+            color: #fff;
+            margin-bottom: 5px;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" style="background: rgba(255, 255, 255, 0.95); box-shadow: 0 2px 15px rgba(0,0,0,0.1);">
+        <div class="logo">
+            <a href="index.html">Rihaar <span>by Riya</span></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#shop">Shop</a></li>
+            <li><a href="gallery.html" class="active">Our Work</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <div class="nav-icons">
+            <a href="https://www.instagram.com/rihaarbyriya?igsh=ODdzdWExbDZmdmE4" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/918132952912" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="gallery-header">
+        <h1 class="fade-up">Our Masterpieces</h1>
+        <p class="fade-up delay-1">Explore our collection of custom hand-painted canvases, delicate keychains, and beautiful bouquets created with love for our wonderful clients.</p>
+    </header>
+
+    <!-- Gallery Grid -->
+    <section class="portfolio-grid">
+        <!-- Canvases -->
+        <div class="portfolio-item scroll-anim">
+            <img src="images/canvas1.jpeg" alt="Canvas Painting">
+            <div class="portfolio-overlay">
+                <h3>Custom Canvas</h3>
+            </div>
+        </div>
+        <div class="portfolio-item scroll-anim">
+            <img src="images/canvas2.jpeg" alt="Canvas Painting">
+            <div class="portfolio-overlay">
+                <h3>Hand-painted Canvas</h3>
+            </div>
+        </div>
+        <div class="portfolio-item scroll-anim">
+            <img src="images/canvas3.jpeg" alt="Canvas Painting">
+            <div class="portfolio-overlay">
+                <h3>Custom Portrait</h3>
+            </div>
+        </div>
+
+        <!-- Keychains -->
+        <div class="portfolio-item scroll-anim">
+            <img src="images/key1.jpeg" alt="Keychain">
+            <div class="portfolio-overlay">
+                <h3>Handcrafted Keychain</h3>
+            </div>
+        </div>
+        <div class="portfolio-item scroll-anim">
+            <img src="images/key2.jpeg" alt="Keychain">
+            <div class="portfolio-overlay">
+                <h3>Custom Keychain</h3>
+            </div>
+        </div>
+        <div class="portfolio-item scroll-anim">
+            <img src="images/key3.jpeg" alt="Keychain">
+            <div class="portfolio-overlay">
+                <h3>Aesthetic Keychain</h3>
+            </div>
+        </div>
+
+        <!-- Bouquets -->
+        <div class="portfolio-item scroll-anim">
+            <img src="images/B1.jpeg" alt="Bouquet">
+            <div class="portfolio-overlay">
+                <h3>Floral Bouquet</h3>
+            </div>
+        </div>
+        <div class="portfolio-item scroll-anim">
+            <img src="images/B2.jpeg" alt="Bouquet">
+            <div class="portfolio-overlay">
+                <h3>Custom Bouquet</h3>
+            </div>
+        </div>
+
+        <!-- Bookmarks -->
+        <div class="portfolio-item scroll-anim">
+            <img src="images/book1.jpeg" alt="Bookmark">
+            <div class="portfolio-overlay">
+                <h3>Embroidered Bookmark</h3>
+            </div>
+        </div>
+        <div class="portfolio-item scroll-anim">
+            <img src="images/book2.jpeg" alt="Bookmark">
+            <div class="portfolio-overlay">
+                <h3>Floral Bookmark</h3>
+            </div>
+        </div>
+
+        <!-- Tote Bags and Earrings -->
+        <div class="portfolio-item scroll-anim">
+            <img src="images/bag1.jpeg" alt="Tote Bag">
+            <div class="portfolio-overlay">
+                <h3>Painted Tote Bag</h3>
+            </div>
+        </div>
+        <div class="portfolio-item scroll-anim">
+            <img src="images/ear1.jpeg" alt="Earrings">
+            <div class="portfolio-overlay">
+                <h3>Handmade Earrings</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-content" style="max-width: 1200px; margin: 0 auto; padding: 40px 5%; display: flex; justify-content: space-between; flex-wrap: wrap;">
+            <div class="footer-brand">
+                <h2>Rihaar <span>by Riya</span></h2>
+                <p>Crafting joy, one piece at a time.</p>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-phone-alt"></i> +91 81329 52912</p>
+                <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/918132952912">Chat on WhatsApp</a></p>
+                <div class="socials">
+                    <a href="https://www.instagram.com/rihaarbyriya?igsh=ODdzdWExbDZmdmE4" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
